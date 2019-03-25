@@ -1,0 +1,8 @@
+<h2>title</h2>
+<p><%= @tweet.title %></p>
+<h2>body</h2>
+<p><%= @tweet.body %></p>
+
+<%= link_to "edit","/tweets/#{@tweet.id}/edit",class:"edit_#{id}" %>
+|
+<%= link_to "back","/tweets",class:"back"%>
