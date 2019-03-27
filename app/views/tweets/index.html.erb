@@ -14,9 +14,9 @@
         <tr>
         <td><%= tweet.title %></td>
         <td><%= tweet.body %></td>
-        <td class="yoko"><%= link_to "show","/tweets/#{tweet.id}" ,class:"show_#{id}"%></td>
-        <td class="yoko"><%= link_to "edit","/tweets/#{tweet.id}/edit",class:"edit_#{id}"%></td>
-        <td class="yoko"><%= link_to "delete","/tweets/#{tweet.id}",method: :delete,class:"destroy_#{id}"%></td>
+        <td class="yoko"><%= link_to "show","/tweets/#{tweet.id}",class:"show_#{tweet.id}"%></td>
+        <td class="yoko"><%= link_to "edit","/tweets/#{tweet.id}/edit",class:"edit_#{tweet.id}"%></td>
+        <td class="yoko"><%= link_to "delete","/tweets/#{tweet.id}",method: :delete,class:"destroy_#{tweet.id}"%></td>
         </tr>
 
 
