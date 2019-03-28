@@ -18,8 +18,12 @@ end
 
 def create
     tweet = Tweet.new(tweet_params)
-    tweet.save
-    redirect_to "/tweets/#{tweet.id}"
+    if tweet.save
+      flash[:notice] = "Book was successfully created."
+      redirect_to("/tweets/#{tweet.id}")
+    else
+      render("tweets/index")
+    end
 end
 
 def show
